@@ -2,8 +2,7 @@
 A lightweight rendering abstraction layer which allows java projects to make use of modern OpenGL paradigms.
 
 ## How To Use
-Navigate to the <a href="https://github.com/theskidster/ShaderCore/releases">releases</a> section and download the latest ShaderCore-X.X.X.zip and unpack the .jar file into your 
-projects dependencies. 
+Navigate to the <a href="https://github.com/theskidster/ShaderCore/releases">releases</a> section and download the latest shadercore.zip and unpack the shadercore.jar, shadercore-javadoc.jar, and shadercore-sources.jar into their respective places within your projects dependencies as specified by the IDE you're using.
 
 ShaderCore requires a few libraries of its own which can be found in the projects "lib" folder- make sure to include these in your project as well if 
 they aren't already present.
