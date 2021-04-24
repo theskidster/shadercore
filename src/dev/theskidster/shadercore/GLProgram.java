@@ -29,6 +29,8 @@ public class GLProgram {
 
     final int handle;
     
+    public final String name;
+    
     private final Map<String, Uniform> uniforms = new HashMap<>();
     private static final Map<BufferType, Integer> bufferSizes;
     
@@ -50,6 +52,8 @@ public class GLProgram {
      * @param name    the name used to identify the program should it fail to link properly
      */
     public GLProgram(LinkedList<Shader> shaders, String name) {
+        this.name = name;
+        
         handle = glCreateProgram();
         shaders.forEach(shader -> glAttachShader(handle, shader.handle));
         glLinkProgram(handle);
