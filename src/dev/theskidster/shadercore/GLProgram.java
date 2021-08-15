@@ -60,7 +60,7 @@ public class GLProgram {
         
         if(glGetProgrami(handle, GL_LINK_STATUS) != GL_TRUE) {
             JLogger.setModule(MODULE_NAME);
-            JLogger.logSevere("Failed to link shader program: \"" + name + "\"", null);
+            JLogger.logSevere("Failed to link shader program: \"" + name + "\" " + glGetShaderInfoLog(handle), null);
         } else {
             JLogger.setModule(MODULE_NAME);
             JLogger.logInfo("Shader program: \"" + name + "\" linked successfully.");
